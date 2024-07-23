@@ -1,0 +1,209 @@
+.menuMain {
+  background-image: url("../../Assets/bg.jpg");
+  height: 150vh;
+  width: 100% !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Make the container relative for absolute positioning of the title */
+}
+
+/* Add an overlay to dim the background image */
+.menuMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay to dim the background */
+  z-index: 0; /* Ensure the overlay is below the title */
+}
+
+.titleMenu {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  position: absolute; /* Position the title absolutely */
+  top: 5%; /* Position the title 5% from the top */
+  left: 5%; /* Position the title 5% from the left */
+  z-index: 1; /* Ensure the title is above the background */
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: flex-start; /* Align items to the top */
+  gap: 30px; /* Space between the images and content */
+  position: absolute;
+  top: 10%; /* Position the images and content 20% from the top */
+  left: 50%; /* Center the container horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  width: 80%; /* Full width to center content */
+}
+
+
+.menuItem1 {
+  background: #2e2e2e98;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+  max-width: 500px; /* Fixed width for the content */
+  display: flex;
+  flex-direction: column; /* Stack the image and content vertically */
+}
+
+.menuItem1 {
+  margin: 20% 0;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to dim the background */
+  border-radius: 10px;
+  z-index: 1; /* Ensure the overlay is above the image but below the text */
+}
+
+.nigiri {
+  width: 100%; /* Ensure the image covers the entire width of its container */
+  height: 200px; /* Fixed height for images */
+  border-radius: 10px;
+  margin-bottom: 10px; /* Space between the image and content */
+  object-fit: cover; /* Ensure the image covers the entire box */
+  position: relative;
+  z-index: 0; /* Ensure the image is below the overlay */
+}
+
+.imageLabel {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Text color for readability */
+  padding: 50px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 55px; /* Adjust font size */
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+
+  z-index: 2; /* Ensure the text is above the overlay */
+}
+
+.menuContent {
+  color: white; /* Text color for readability */
+  text-align: center; /* Center text in the content */
+}
+
+.menuContent ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.menuContent li {
+  display: flex;
+  justify-content: space-between; /* Space between item names and prices */
+  align-items: stretch; /* Center items vertically */
+  font-size: 20px; /* Adjust font size */
+  padding-bottom: 10px; /* Padding below each item */
+}
+
+.menuContent .itemName {
+  text-align: left; /* Align the item name to the left */
+}
+
+.menuContent .itemLine {
+  flex: 1;
+  border-bottom: 1px solid #ffffff; /* Solid line between items */
+  margin: -55px 5px 15px 5px;
+}
+
+.menuContent .itemPrice {
+  text-align: right; /* Align the item price to the right */
+}
+
+
+.ratingbg {
+  background-color: #2d2d2d;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.reviewsContainer {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.sectionTitle {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.reviewsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rating {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  color: white;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stars {
+  margin: 10px 0;
+  font-size: 24px;
+  color: gold;
+}
+
+.stars i {
+  margin: 0 2px;
+}
+
+.titleName {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.contentReview {
+  font-size: 16px;
+  line-height: 1.5;
+}
+

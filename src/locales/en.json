@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "access": "Access",
+    "atmosphere": "Atmosphere",
+    "reservation": "Reservation",
+    "english": "English",
+    "japanese": "日本語",
+    "slogan": "A Slice of Heaven"
+  },
+  "home": {
+    "nigiri_sushi": "Nigiri Sushi",
+    "nigiri_description": "Our nigiri sushi is made with the freshest fish and rice, and is sure to delight your taste buds. Try our salmon, tuna, or yellowtail nigiri for a truly authentic sushi experience.",
+    "maki_rolls": "Maki Rolls",
+    "maki_description": "Our maki rolls are a customer favorite! Choose from a variety of fillings, including salmon, tuna, crab, and avocado. Each roll is expertly crafted and bursting with flavor.",
+    "sashimi_platter": "Sashimi Platter",
+    "sashimi_description": "A fresh and flavorful assortment of raw fish, sliced to perfection. Our sashimi platter is perfect for sharing with friends and family. Indulge in the delicate flavors and pristine quality that make every bite a culinary delight.",
+    "chef": "Chef",
+    "cheff_description": "We believe that sushi is more than just food, it's an experience that engages all of your senses."
+  },
+
+  "atmosphere": {
+    "title": "Atmosphere",
+    "description": "Our restaurant is designed to provide a serene and relaxing atmosphere where you can enjoy the freshest sushi and sashimi in town. Whether you’re looking for a romantic dinner for two or a fun night out with friends, our restaurant is the perfect choice.",
+    "images": {
+      "btm": "/assets/btm.jpg",
+      "top": "/assets/top.jpg",
+      "down": "/assets/down.jpg"
+    }
+  },
+  "reservation": {
+    "title": "reservation",
+    "query": "Reservation - Enquiries",
+    "booking": "Internet Reservation"
+  },
+    "access": {
+      "address": {
+        "title": "Address",
+        "detail": "1-2-345, Ginza, Tokyo"
+      },
+      "access": {
+        "title": "Access",
+        "detail": "Shinbashi - 5m / Ginza - 5m"
+      },
+      "enquiry": {
+        "title": "Enquiry",
+        "detail": "03-1234-5678"
+      },
+      "footer": {
+        "title": "Sushi Doshira",
+        "copyright": "Copyright © 2024 veermanikandan",
+        "rights": "All Rights Reserved"
+      }
+    },
+      "menu": {
+        "title": "Menu",
+        "dishes": {
+          "title": "Dishes",
+          "items": [
+            { "name": "Tuna Sashimi", "price": "$12.99" },
+            { "name": "Salmon Sashimi", "price": "$11.99" },
+            { "name": "Yellowtail", "price": "$13.99" },
+            { "name": "Eel Sushi", "price": "$4.99" },
+            { "name": "Shrimp Sushi", "price": "$3.99" },
+            { "name": "Octopus Sushi", "price": "$5.99" },
+            { "name": "California Roll", "price": "$6.99" },
+            { "name": "Spicy Tuna Roll", "price": "$7.99" },
+            { "name": "Dragon Roll", "price": "$12.99" },
+            { "name": "Rainbow Roll", "price": "$13.99" },
+            { "name": "Spider Roll", "price": "$11.99" },
+            { "name": "Unagi Don", "price": "$14.99" },
+            { "name": "Chirashi Don", "price": "$16.99" },
+            { "name": "Tekka Don", "price": "$15.99" }
+          ]
+        },
+        "drinks": {
+          "title": "Drinks",
+          "items": [
+            { "name": "Green Tea", "price": "$12.99" },
+            { "name": "Sake", "price": "$11.99" },
+            { "name": "Beer", "price": "$13.99" },
+            { "name": "Plum Wine", "price": "$4.99" },
+            { "name": "Whiskey", "price": "$3.99" },
+            { "name": "Shochu", "price": "$5.99" },
+            { "name": "Umeshu", "price": "$6.99" },
+            { "name": "Oolong Tea", "price": "$7.99" },
+            { "name": "Orange Juice", "price": "$12.99" },
+            { "name": "Grapefruit Juice", "price": "$13.99" },
+            { "name": "Coke", "price": "$11.99" },
+            { "name": "Sprite", "price": "$14.99" },
+            { "name": "Ramune", "price": "$16.99" },
+            { "name": "Calpis", "price": "$15.99" }
+          ]
+        },
+        "reviews": {
+          "title": "What Our Customers Say",
+          "customer": [
+            {
+              "id": 1,
+              "profile": "prof",
+              "titleName": "Yamada",
+              "contentReview": "I’ve been coming to this sushi restaurant for years and it never disappoints. The sushi is always fresh and delicious, and the staff is friendly and welcoming. I highly recommend it!",
+              "stars": 5
+            },
+            {
+              "id": 2,
+              "profile": "prof1",
+              "titleName": "Hiromi",
+              "contentReview": "The best sushi place in town! The variety of rolls is amazing and the quality is top-notch. A must-visit for sushi lovers!",
+              "stars": 4
+            },
+            {
+              "id": 3,
+              "profile": "prof2",
+              "titleName": "Akane",
+              "contentReview": "A fantastic dining experience! The atmosphere is cozy, the sushi is fresh, and the service is excellent. I will definitely come back!",
+              "stars": 5
+            }
+          ]
+        }
+      }
+    }
+    
+  
+  
+  
+

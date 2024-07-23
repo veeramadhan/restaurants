@@ -1,0 +1,39 @@
+.reservationMain {
+  background-color: #2d2d2d;
+  height: 80vh;
+}
+
+.titleRes {
+  color: red;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 66px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.queryContent {
+  display: flex;
+  border: 1px solid rgb(33, 29, 29);
+  color: white;
+  justify-content: space-around;
+  padding: 60px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  background: #060505b1;
+  margin-top: 3%;
+}
+
+.internetRes {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+
+.paraNum{
+    font-size: 48px;
+}

@@ -1,0 +1,63 @@
+.atmoshpereMain {
+  background-color: #1e1e1e;
+  height: 80vh;
+  width: 100%;
+}
+
+.rightparaContent {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+  text-align: center;
+}
+
+.collegue {
+  display: grid;
+  grid-template-areas:
+    "btmpic btmpic topic"
+    "btmpic  btmpic topic"
+    "downpic downpic downpic";
+    gap: 20;
+}
+
+.btmPic {
+    grid-area: btmPic;
+  }
+  .btmPic img {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    border: 2px solid grey;
+    margin-left: 10%;
+  }
+
+.topPic {
+  grid-area: topPic;
+}
+.topPic img {
+  object-fit: cover;
+  width: 30%;
+  height: 50%;
+  margin-left: 70%;
+  border-radius: 50px;
+  margin-top: 30%;
+  border: 2px solid grey;
+}
+
+  .downPic {
+    grid-area: downPic;
+  }
+
+  .downPic img {
+    object-fit: cover;
+    width: 45%;
+    height: 35%;
+    border-radius: 20px;
+    border: 2px solid grey;
+    margin-left: -5%;
+  }
