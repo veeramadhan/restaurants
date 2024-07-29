@@ -114,7 +114,7 @@ const Nav = () => {
       </nav>
       <div className="mainContent">
         <p>
-          <span className="highlighttxt">S</span>ushi Doshira
+          <span className="highlighttxt">S</span>ushi Symphony
         </p>
       </div>
       <div className="subContent">

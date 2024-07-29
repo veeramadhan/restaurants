@@ -182,5 +182,33 @@
   
 
   @media (max-width: 576px) {
+    .navbar-toggler {
+        position: fixed;
+        top: 16px;
+        left: 20px;
+        z-index: 1050; /* Ensure the button is above other elements */
+        background-color: #fff; /* Optional: Set a background color */
+        border: none; /* Optional: Remove border if any */
+    }
 
+    .buttonLan, .slash {
+        display: none;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 61px;
+        left: 44px;
+    }
+
+    .leftContent {
+        display: none;
+    }
+
+    .NavMain::before {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
   }
+  
