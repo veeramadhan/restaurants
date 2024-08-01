@@ -65,7 +65,7 @@ const Nav = () => {
             {isMenuOpen ? (
               <i className="fas fa-times"></i> // Close icon
             ) : (
-              <i className="navbar-toggler-icon fas fa-bars"></i> // Menu icon
+              <i className="navbar-toggler-icon"></i> // Menu icon
             )}
           </button>
           <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
