@@ -9,6 +9,15 @@ const Nav = () => {
   const { t, i18n } = useTranslation();
 
   const [showScroll, setShowScroll] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400) {
@@ -36,7 +45,7 @@ const Nav = () => {
   return (
     <div className="NavMain">
       <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid gap-3">
+        <div className="container-fluid gap-3 navv">
           <button className="buttonLan" onClick={() => changeLanguage('en')}>
             <h2>{t('nav.english')}</h2>
           </button>
@@ -48,15 +57,18 @@ const Nav = () => {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
+            onClick={handleToggleMenu}
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            aria-expanded={isMenuOpen ? "true" : "false"}
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            {isMenuOpen ? (
+              <i className="fas fa-times"></i> // Close icon
+            ) : (
+              <i className="navbar-toggler-icon fas fa-bars"></i> // Menu icon
+            )}
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 gap-5 mb-lg-0">
               <li className="nav-item">
                 <Link
@@ -64,6 +76,7 @@ const Nav = () => {
                   className="nav-link active"
                   smooth={true}
                   duration={250}
+                  onClick={handleCloseMenu}
                 >
                   <h2>{t('nav.home')}</h2>
                 </Link>
@@ -74,6 +87,7 @@ const Nav = () => {
                   className="nav-link active"
                   smooth={true}
                   duration={250}
+                  onClick={handleCloseMenu}
                 >
                   <h2>{t('nav.menu')}</h2>
                 </Link>
@@ -84,6 +98,7 @@ const Nav = () => {
                   className="nav-link active"
                   smooth={true}
                   duration={250}
+                  onClick={handleCloseMenu}
                 >
                   <h2>{t('nav.access')}</h2>
                 </Link>
@@ -94,6 +109,7 @@ const Nav = () => {
                   className="nav-link active"
                   smooth={true}
                   duration={250}
+                  onClick={handleCloseMenu}
                 >
                   <h2>{t('nav.atmosphere')}</h2>
                 </Link>
@@ -104,6 +120,7 @@ const Nav = () => {
                   className="nav-link active"
                   smooth={true}
                   duration={250}
+                  onClick={handleCloseMenu}
                 >
                   <h2 className="resBg">{t('nav.reservation')}</h2>
                 </Link>
@@ -114,7 +131,7 @@ const Nav = () => {
       </nav>
       <div className="mainContent">
         <p>
-          <span className="highlighttxt">S</span>ushi Symphony
+          <span className="highlighttxt">{t('nav.high')}</span>  {t('nav.light')}
         </p>
       </div>
       <div className="subContent">
