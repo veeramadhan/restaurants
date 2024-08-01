@@ -1,214 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .NavMain {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.buttonLan{
-    all: unset;
-    color: white;
+.buttonLan {
+  all: unset;
+  color: white;
 }
 
-.slash{
-    color:white;
-    font-size: 40px;
-    padding-bottom: 15px;
+.slash {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 15px;
 }
 
 .navbar-nav .nav-item .nav-link {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-nav .nav-item .nav-link::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    left: -20px; /* Adjust as needed */
-  }
-  
-
-.NavMain::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: slide 20s infinite;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
+.navbar-nav .nav-item .nav-link::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px; /* Adjust as needed */
+}
 
+.NavMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slide 20s infinite;
+}
 
 @keyframes slide {
-    0% {
-        background-image: url("../../Assets/sushi.jpg");
-        transform: scale(1);
-    }
-    20% {
-        background-image: url("../../Assets/sushi.jpg");
-        transform: scale(1.1);
-    }
-    20.01% {
-        background-image: url("../../Assets/sushii.jpg");
-        transform: scale(1);
-    }
-    40% {
-        background-image: url("../../Assets/sushii.jpg");
-        transform: scale(1.1);
-    }
-    40.01% {
-        background-image: url("../../Assets/sushiii.jpg");
-        transform: scale(1);
-    }
-    60% {
-        background-image: url("../../Assets/sushiii.jpg");
-        transform: scale(1.1);
-    }
-    60.01% {
-        background-image: url("../../Assets/sushiiii.jpg");
-        transform: scale(1);
-    }
-    80% {
-        background-image: url("../../Assets/sushiiii.jpg");
-        transform: scale(1.1);
-    }
-    80.01% {
-        background-image: url("../../Assets/sushiiiii.jpg");
-        transform: scale(1);
-    }
-    100% {
-        background-image: url("../../Assets/sushiiiii.jpg");
-        transform: scale(1.1);
-    }
+  0% {
+    background-image: url("../../Assets/sushi.jpg");
+    transform: scale(1);
+  }
+  20% {
+    background-image: url("../../Assets/sushi.jpg");
+    transform: scale(1.1);
+  }
+  20.01% {
+    background-image: url("../../Assets/sushii.jpg");
+    transform: scale(1);
+  }
+  40% {
+    background-image: url("../../Assets/sushii.jpg");
+    transform: scale(1.1);
+  }
+  40.01% {
+    background-image: url("../../Assets/sushiii.jpg");
+    transform: scale(1);
+  }
+  60% {
+    background-image: url("../../Assets/sushiii.jpg");
+    transform: scale(1.1);
+  }
+  60.01% {
+    background-image: url("../../Assets/sushiiii.jpg");
+    transform: scale(1);
+  }
+  80% {
+    background-image: url("../../Assets/sushiiii.jpg");
+    transform: scale(1.1);
+  }
+  80.01% {
+    background-image: url("../../Assets/sushiiiii.jpg");
+    transform: scale(1);
+  }
+  100% {
+    background-image: url("../../Assets/sushiiiii.jpg");
+    transform: scale(1.1);
+  }
 }
 
 .navbar-nav .nav-item {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-nav .nav-item .resBg{
-    margin: 0; /* Ensure there's no margin affecting alignment */
-    padding-left: 20px; /* Ensure there's enough space for the dot */
-    background-color: red;
-    border-radius: 25px;
-    padding: 10px;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item .resBg {
+  margin: 0; /* Ensure there's no margin affecting alignment */
+  padding-left: 20px; /* Ensure there's enough space for the dot */
+  background-color: red;
+  border-radius: 25px;
+  padding: 10px;
+}
 /* Additional styling for the navbar */
 .navbar {
-    position: relative;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-brand, .nav-link {
-    color: white !important;
+.navbar-brand,
+.nav-link {
+  color: white !important;
 }
-
 
 .mainContent {
-    color: white;
-    font-size: 80px !important;
-    position: absolute;
-    background: rgba(45, 45, 45, 0.6); /* Semi-transparent background */
-    padding: 10px 50px 0px;
-    margin: 8% 20%;
-    border-radius: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
+  color: white;
+  font-size: 80px !important;
+  position: absolute;
+  background: rgba(45, 45, 45, 0.6); /* Semi-transparent background */
+  padding: 10px 50px 0px;
+  margin: 8% 20%;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
 }
 
 .subContent {
-    color: white;
-    font-size: 50px !important;
-    position: absolute;
-    background: rgba(45, 45, 45, 0.6); /* Semi-transparent background */
-    padding: 10px 50px 0px;
-    margin: 22% 30%;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
+  color: white;
+  font-size: 50px !important;
+  position: absolute;
+  background: rgba(45, 45, 45, 0.6); /* Semi-transparent background */
+  padding: 10px 50px 0px;
+  margin: 22% 30%;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
 }
 
-.highlighttxt{
-    color: red;
-    font-size: 100px !important;
+.highlighttxt {
+  color: red;
+  font-size: 100px !important;
 }
-
 
 .logosushi {
-    position: absolute;
-    bottom: 80px; /* Adjust the bottom position as needed */
-    right: 150px; /* Adjust the right position as needed */
-    height: 220px;
-    width: 280px;
+  position: absolute;
+  bottom: 80px; /* Adjust the bottom position as needed */
+  right: 150px; /* Adjust the right position as needed */
+  height: 220px;
+  width: 280px;
 }
 
 .scrollTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 24px;
-    opacity: 0.7;
-    transition: opacity 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .navbar-toggler {
+    /* position: ; */
+    top: 16px;
+    left: 20px;
+    z-index: 100; /* Ensure the button is above other elements */
+    background-color: #fff; /* Optional: Set a background color */
+    border: none; /* Optional: Remove border if any */
   }
-  
-  .scrollTop:hover {
-    opacity: 1;
+
+  .buttonLan,
+  .slash {
+    display: none;
   }
-  
 
-  @media (max-width: 576px) {
-    .navbar-toggler {
-        position: fixed;
-        top: 16px;
-        left: 20px;
-        z-index: 1050; /* Ensure the button is above other elements */
-        background-color: #fff; /* Optional: Set a background color */
-        border: none; /* Optional: Remove border if any */
-    }
-
-    .buttonLan, .slash {
-        display: none;
-    }
-
-    .navbar-collapse {
-        position: absolute;
-        top: 61px;
-        left: 44px;
-    }
-
-    .leftContent {
-        display: none;
-    }
-
-    .NavMain::before {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+  .navbar-collapse {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 101; /* Ensure the button is above other elements */
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    padding: 30px;
   }
-  
+
+  .NavMain::before {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
