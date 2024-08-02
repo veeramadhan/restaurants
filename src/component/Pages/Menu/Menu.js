@@ -45,7 +45,7 @@ const Menu = () => {
         </div>
         <div className="menuContainer row">
           <div
-            className="menuItem col-5"
+            className="menuItem col-lg-5 col-md-10"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -56,7 +56,7 @@ const Menu = () => {
           </div>
 
           <div
-            className="menuItem col-5"
+            className="menuItem col-lg-5 col-md-7"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -89,7 +89,7 @@ const Menu = () => {
           </div>
 
           <div
-            className="menuItem1 col-4"
+            className="menuItem2 col-4"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
