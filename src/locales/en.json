@@ -32,7 +32,7 @@
     }
   },
   "reservation": {
-    "title": "reservation",
+    "title": "Reservation",
     "query": "Reservation - Enquiries",
     "booking": "Internet Reservation"
   },

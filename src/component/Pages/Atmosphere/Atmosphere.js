@@ -31,7 +31,7 @@ const Atmosphere = () => {
   return (
     <Element name="atmosphere" className="atmoshpereMain">
       <div className="container-fluid row" data-aos="fade-down-right" data-aos-duration="1000">
-        <div className="col-6  collegue">
+        <div className="col-lg-6  collegue">
           <div className="btmPic">
             <img src={btm} alt={t('atmosphere.title')} />
           </div>
@@ -43,8 +43,8 @@ const Atmosphere = () => {
           </div>
         </div>
 
-        <div className="col-5 rightparaContent" data-aos="fade-down-left" data-aos-duration="1000">
-          <h1 style={{color:"red", textAlign:"center", fontSize:"60px"}}>{t('atmosphere.title')}</h1>
+        <div className="col-lg-5 rightparaContent" data-aos="fade-down-left" data-aos-duration="1000">
+          <h1 style={{color:"red", textAlign:"center", fontSize:"60px"}} className="atmostitle">{t('atmosphere.title')}</h1>
           <p>{t('atmosphere.description')}</p>
         </div>
       </div>

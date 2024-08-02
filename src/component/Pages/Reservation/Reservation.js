@@ -34,11 +34,11 @@ const Reservation = () => {
 
      <div className='queryContent container' data-aos="zoom-in" data-aos-duration="1000">
         <div>
-            <h5>{t("reservation.query")}</h5>
+            <h5 className="mbtext">{t("reservation.query")}</h5>
             <p className='paraNum'>03-1234-5678</p>
         </div>
         <div className='internetRes'>
-            <h1>{t("reservation.booking")}</h1>
+            <h1 className="mbtext">{t("reservation.booking")}</h1>
         </div>
      </div>
     </Element>

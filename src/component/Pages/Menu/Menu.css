@@ -256,9 +256,7 @@
   /* top: 0; */
 }
 
-.ratingbg{
-  display: none;
-}
+
 
 .menuContainer {
   display: flex;
@@ -272,5 +270,21 @@
   transform: translateX(-50%);
   /* width: 80%; */
   /* margin-top: -30%; */
+}
+
+.ratingbg {
+  background-color: #2d2d2d;
+  height: 188vh;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column-reverse;
+}
+
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
 }
 }

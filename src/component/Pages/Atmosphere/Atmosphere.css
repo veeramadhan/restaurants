@@ -64,8 +64,21 @@
   
 
   @media (max-width: 576px) {
-.atmoshpereMain{
-  display: none;
+    .rightparaContent {
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      margin: 6% 0;
+      text-align: center;
+  }
+  .atmostitle{
+    color: red;
+    text-align: center;
+    font-size: 40px !important;
 }
+
 
   }

@@ -40,7 +40,40 @@
 
 
 @media (max-width: 576px) {
-.reservationMain{
-  display: none;
+
+  .reservationMain {
+    background-color: #2d2d2d;
+    height: 50vh;
+  }
+  .titleRes {
+    color: red;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 44px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.queryContent {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(33, 29, 29);
+  color: white;
+  justify-content: space-around;
+  padding: 9px;
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #060505b1;
+  margin-top: 3%;
+  width: 95%;
+}
+
+.paraNum {
+  font-size: 25px;
+  text-align: center;
+}
+
+.mbtext{
+  text-align: center;
 }
 }
