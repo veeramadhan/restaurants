@@ -30,8 +30,6 @@ const Home = () => {
     };
   }, []);
 
-  
-
   return (
     <Element name="home" className="homeMain">
       <div className="container-fluid d-lg-flex flex-lg-row flex-sm-column flex-wrap align-items-center justify-content-center mt-lg-5 gap-lg-5">
@@ -48,7 +46,7 @@ const Home = () => {
         <div className="col-12 col-md-3">
           <img src={mahi} className="nigirisushi col-12" alt={t('home.maki_rolls')} />
         </div>
-        <div className="col-12 col-md-7 leftContent" data-aos="fade-left" data-aos-duration="1000">
+        <div className="col-12 col-md-7 leftContent" data-aos="zoom-in-up" data-aos-duration="1000">
           <h1 className="title">{t('home.maki_rolls')}</h1>
           <p className="ptxt">{t('home.maki_description')}</p>
         </div>

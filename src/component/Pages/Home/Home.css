@@ -1,106 +1,105 @@
 .homeMain {
-    background-color: #2d2d2d;
-    height: 300vh;
-    width: 100% !important;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  background-color: #2d2d2d;
+  height: 300vh;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .leftContent {
-    backdrop-filter: blur(10px);
-    background: #1e1e1e;
-    color: white;
-    padding: 40px 80px;
-    border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: #1e1e1e;
+  color: white;
+  padding: 40px 80px;
+  border-radius: 20px;
 }
 
 .title {
-    font-size: 56px !important;
-    color: red;
+  font-size: 56px !important;
+  color: red;
 }
 
 .ptxt {
-    font-size: 23px !important;
+  font-size: 23px !important;
 }
 
 .nigirisushi {
-    height: 280px;
-    background: #1e1e1e;
-    border-radius: 20px;
+  height: 280px;
+  background: #1e1e1e;
+  border-radius: 20px;
 }
 
 .cheffMain {
-    position: relative;
-    width: 100%;
-    height: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .cheff {
-    width: 100%;
-    height: 140vh;
-    background-position: center;
-    background-size: contain;
+  width: 100%;
+  height: 140vh;
+  background-position: center;
+  background-size: contain;
 
 }
 
 .cheffContent {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 38px;
-    font-weight: 600;
-    text-align: center;
-    background: rgba(46, 46, 46, 0.8);
-    padding: 20px;
-    border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 38px;
+  font-weight: 600;
+  text-align: center;
+  background: rgba(46, 46, 46, 0.8);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 @media (max-width: 576px) {
-    .cheff {
-      width: 100%;
-      height: 40vh;
-      background-position: center;
-      background-size: contain;
-    }
-  
-    .cheffContent {
-        top: 50%;
-        font-size: 13px;
-        width: 45%;
-        padding: 12px;
-    }
-  
-    .leftContent {
-      padding: 30px 40px;
-      margin: 7% 0%;
+  .cheff {
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-size: contain;
   }
-  
-    .title {
-      font-size: 30px !important;
-      text-align: center;
-    }
- 
-    .ptxt {
-      font-size: 16px !important;
-      text-align: center;
-    }
-  
-    .nigirisushi {
-      width: 100%;
-      margin-top: 7%;
-    }
-  
-    .homeMain {
-      height: auto;
-    }
-  
-    .row {
-      margin-bottom: 30px;
-    }
+
+  .cheffContent {
+      top: 50%;
+      font-size: 13px;
+      width: 45%;
+      padding: 12px;
   }
-  
+
+  .leftContent {
+    padding: 30px 40px;
+    margin: 7% 0%;
+}
+
+  .title {
+    font-size: 30px !important;
+    text-align: center;
+  }
+
+  .ptxt {
+    font-size: 16px !important;
+    text-align: center;
+  }
+
+  .nigirisushi {
+    width: 100%;
+    margin-top: 7%;
+  }
+
+  .homeMain {
+    height: auto;
+  }
+
+  .row {
+    margin-bottom: 30px;
+  }
+}
