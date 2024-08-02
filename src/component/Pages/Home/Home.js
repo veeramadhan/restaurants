@@ -14,32 +14,19 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({
-      offset: 200,
-      duration: 1000,
-      easing: 'ease',
-      once: false,
-      anchorPlacement: 'top-center',
+      offset: 200, // offset (in px) from the original trigger point
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
     });
 
-    // Remove AOS effect on mobile devices
-    const handleResize = () => {
-      const elements = document.querySelectorAll('[data-aos]');
-      if (window.innerWidth < 576) {
-        elements.forEach((el) => {
-          el.removeAttribute('data-aos');
-        });
-      } else {
-        elements.forEach((el) => {
-          el.setAttribute('data-aos', 'fade-left');
-        });
-      }
-    };
+    // Refresh AOS on scroll
+    window.addEventListener('scroll', AOS.refresh);
 
-    handleResize(); // Initial check
-    window.addEventListener('resize', handleResize); // Check on resize
-
+    // Cleanup event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', AOS.refresh);
     };
   }, []);
 
